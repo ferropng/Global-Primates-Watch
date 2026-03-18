@@ -1,0 +1,527 @@
+sci_name,category,category_pt,risco
+Allenopithecus nigroviridis,LC,Pouco Preocupante,Baixo Risco
+Allocebus trichotis,EN,Em Perigo,Alto Risco
+Alouatta pigra,EN,Em Perigo,Alto Risco
+Alouatta ululata,EN,Em Perigo,Alto Risco
+Alouatta juara,LC,Pouco Preocupante,Baixo Risco
+Aotus miconax,EN,Em Perigo,Alto Risco
+Aotus griseimembra,VU,Vulnerável,Alto Risco
+Aotus lemurinus,VU,Vulnerável,Alto Risco
+Arctocebus aureus,LC,Pouco Preocupante,Baixo Risco
+Arctocebus calabarensis,NT,Quase Ameaçado,Médio Risco
+Ateles belzebuth,EN,Em Perigo,Alto Risco
+Ateles geoffroyi,EN,Em Perigo,Alto Risco
+Ateles marginatus,EN,Em Perigo,Alto Risco
+Ateles paniscus,VU,Vulnerável,Alto Risco
+Avahi laniger,VU,Vulnerável,Alto Risco
+Avahi occidentalis,VU,Vulnerável,Alto Risco
+Brachyteles arachnoides,CR,Criticamente Ameaçado,Alto Risco
+Brachyteles hypoxanthus,CR,Criticamente Ameaçado,Alto Risco
+Cacajao calvus,LC,Pouco Preocupante,Baixo Risco
+Cacajao ucayalii,VU,Vulnerável,Alto Risco
+Cacajao novaesi,NT,Quase Ameaçado,Médio Risco
+Cacajao rubicundus,LC,Pouco Preocupante,Baixo Risco
+Plecturocebus dubius,LC,Pouco Preocupante,Baixo Risco
+Plecturocebus oenanthe,CR,Criticamente Ameaçado,Alto Risco
+Plecturocebus olallae,CR,Criticamente Ameaçado,Alto Risco
+Callicebus personatus,VU,Vulnerável,Alto Risco
+Callimico goeldii,VU,Vulnerável,Alto Risco
+Callithrix aurita,EN,Em Perigo,Alto Risco
+Callithrix flaviceps,CR,Criticamente Ameaçado,Alto Risco
+Callithrix geoffroyi,LC,Pouco Preocupante,Baixo Risco
+Callithrix kuhlii,VU,Vulnerável,Alto Risco
+Sapajus xanthosternos,CR,Criticamente Ameaçado,Alto Risco
+Cebus cuscinus,NT,Quase Ameaçado,Médio Risco
+Cebus yuracus,NT,Quase Ameaçado,Médio Risco
+Cebus aequatorialis,CR,Criticamente Ameaçado,Alto Risco
+Cebus cesarae,EN,Em Perigo,Alto Risco
+Cebus malitiosus,EN,Em Perigo,Alto Risco
+Cebus trinitatis,CR,Criticamente Ameaçado,Alto Risco
+Cercocebus galeritus,CR,Criticamente Ameaçado,Alto Risco
+Cercocebus torquatus,EN,Em Perigo,Alto Risco
+Cercocebus sanjei,EN,Em Perigo,Alto Risco
+Cercocebus lunulatus,EN,Em Perigo,Alto Risco
+Cercocebus chrysogaster,EN,Em Perigo,Alto Risco
+Cercopithecus ascanius,LC,Pouco Preocupante,Baixo Risco
+Cercopithecus cephus,LC,Pouco Preocupante,Baixo Risco
+Chlorocebus dryas,EN,Em Perigo,Alto Risco
+Cercopithecus erythrogaster,EN,Em Perigo,Alto Risco
+Cercopithecus erythrotis,VU,Vulnerável,Alto Risco
+Cercopithecus hamlyni,VU,Vulnerável,Alto Risco
+Allochrocebus lhoesti,VU,Vulnerável,Alto Risco
+Cercopithecus mitis,LC,Pouco Preocupante,Baixo Risco
+Cercopithecus mona,NT,Quase Ameaçado,Médio Risco
+Cercopithecus neglectus,LC,Pouco Preocupante,Baixo Risco
+Cercopithecus nictitans,NT,Quase Ameaçado,Médio Risco
+Cercopithecus petaurista,NT,Quase Ameaçado,Médio Risco
+Allochrocebus preussi,EN,Em Perigo,Alto Risco
+Cercopithecus sclateri,EN,Em Perigo,Alto Risco
+Allochrocebus solatus,NT,Quase Ameaçado,Médio Risco
+Cercopithecus roloway,CR,Criticamente Ameaçado,Alto Risco
+Chlorocebus djamdjamensis,VU,Vulnerável,Alto Risco
+Cercopithecus diana,EN,Em Perigo,Alto Risco
+Chiropotes albinasus,VU,Vulnerável,Alto Risco
+Colobus angolensis,VU,Vulnerável,Alto Risco
+Colobus guereza,LC,Pouco Preocupante,Baixo Risco
+Colobus polykomos,EN,Em Perigo,Alto Risco
+Colobus satanas,VU,Vulnerável,Alto Risco
+Colobus vellerosus,CR,Criticamente Ameaçado,Alto Risco
+Daubentonia madagascariensis,EN,Em Perigo,Alto Risco
+Eulemur coronatus,EN,Em Perigo,Alto Risco
+Eulemur mongoz,CR,Criticamente Ameaçado,Alto Risco
+Eulemur rubriventer,VU,Vulnerável,Alto Risco
+Eulemur albifrons,VU,Vulnerável,Alto Risco
+Eulemur cinereiceps,CR,Criticamente Ameaçado,Alto Risco
+Eulemur collaris,EN,Em Perigo,Alto Risco
+Eulemur fulvus,VU,Vulnerável,Alto Risco
+Eulemur rufus,VU,Vulnerável,Alto Risco
+Eulemur sanfordi,EN,Em Perigo,Alto Risco
+Eulemur flavifrons,CR,Criticamente Ameaçado,Alto Risco
+Eulemur macaco,EN,Em Perigo,Alto Risco
+Euoticus elegantulus,LC,Pouco Preocupante,Baixo Risco
+Euoticus pallidus,NT,Quase Ameaçado,Médio Risco
+Sciurocheirus alleni,NT,Quase Ameaçado,Médio Risco
+Galago gallarum,LC,Pouco Preocupante,Baixo Risco
+Galago matschiei,LC,Pouco Preocupante,Baixo Risco
+Galago moholi,LC,Pouco Preocupante,Baixo Risco
+Galago senegalensis,LC,Pouco Preocupante,Baixo Risco
+Paragalago zanzibaricus,NT,Quase Ameaçado,Médio Risco
+Gorilla gorilla,CR,Criticamente Ameaçado,Alto Risco
+Hapalemur aureus,CR,Criticamente Ameaçado,Alto Risco
+Hapalemur griseus,VU,Vulnerável,Alto Risco
+Prolemur simus,CR,Criticamente Ameaçado,Alto Risco
+Hapalemur alaotrensis,CR,Criticamente Ameaçado,Alto Risco
+Hapalemur occidentalis,VU,Vulnerável,Alto Risco
+Hylobates agilis,EN,Em Perigo,Alto Risco
+Hylobates klossii,EN,Em Perigo,Alto Risco
+Hylobates lar,EN,Em Perigo,Alto Risco
+Hylobates moloch,EN,Em Perigo,Alto Risco
+Hylobates pileatus,EN,Em Perigo,Alto Risco
+Indri indri,CR,Criticamente Ameaçado,Alto Risco
+Lemur catta,EN,Em Perigo,Alto Risco
+Leontopithecus caissara,EN,Em Perigo,Alto Risco
+Leontopithecus chrysopygus,EN,Em Perigo,Alto Risco
+Leontopithecus rosalia,EN,Em Perigo,Alto Risco
+Lepilemur edwardsi,EN,Em Perigo,Alto Risco
+Lepilemur leucopus,EN,Em Perigo,Alto Risco
+Lepilemur microdon,EN,Em Perigo,Alto Risco
+Lepilemur mustelinus,VU,Vulnerável,Alto Risco
+Lepilemur ruficaudatus,CR,Criticamente Ameaçado,Alto Risco
+Lepilemur septentrionalis,CR,Criticamente Ameaçado,Alto Risco
+Lophocebus albigena,VU,Vulnerável,Alto Risco
+Lophocebus aterrimus,VU,Vulnerável,Alto Risco
+Loris tardigradus,EN,Em Perigo,Alto Risco
+Macaca arctoides,VU,Vulnerável,Alto Risco
+Macaca assamensis,NT,Quase Ameaçado,Médio Risco
+Macaca cyclopis,LC,Pouco Preocupante,Baixo Risco
+Macaca fascicularis,EN,Em Perigo,Alto Risco
+Macaca fuscata,LC,Pouco Preocupante,Baixo Risco
+Macaca maura,EN,Em Perigo,Alto Risco
+Macaca mulatta,LC,Pouco Preocupante,Baixo Risco
+Macaca nemestrina,EN,Em Perigo,Alto Risco
+Macaca nigra,CR,Criticamente Ameaçado,Alto Risco
+Macaca radiata,VU,Vulnerável,Alto Risco
+Macaca silenus,EN,Em Perigo,Alto Risco
+Macaca sinica,EN,Em Perigo,Alto Risco
+Macaca sylvanus,EN,Em Perigo,Alto Risco
+Macaca thibetana,NT,Quase Ameaçado,Médio Risco
+Macaca tonkeana,VU,Vulnerável,Alto Risco
+Macaca nigrescens,VU,Vulnerável,Alto Risco
+Macaca brunnescens,VU,Vulnerável,Alto Risco
+Macaca hecki,VU,Vulnerável,Alto Risco
+Mandrillus leucophaeus,EN,Em Perigo,Alto Risco
+Mandrillus sphinx,VU,Vulnerável,Alto Risco
+Microcebus myoxinus,VU,Vulnerável,Alto Risco
+Miopithecus talapoin,VU,Vulnerável,Alto Risco
+Mirza coquereli,EN,Em Perigo,Alto Risco
+Nasalis larvatus,EN,Em Perigo,Alto Risco
+Otolemur crassicaudatus,LC,Pouco Preocupante,Baixo Risco
+Otolemur garnettii,LC,Pouco Preocupante,Baixo Risco
+Pan paniscus,EN,Em Perigo,Alto Risco
+Pan troglodytes,EN,Em Perigo,Alto Risco
+Papio papio,NT,Quase Ameaçado,Médio Risco
+Papio hamadryas,LC,Pouco Preocupante,Baixo Risco
+Papio ursinus,LC,Pouco Preocupante,Baixo Risco
+Phaner furcifer,EN,Em Perigo,Alto Risco
+Phaner parienti,EN,Em Perigo,Alto Risco
+Phaner pallescens,EN,Em Perigo,Alto Risco
+Phaner electromontis,EN,Em Perigo,Alto Risco
+Pithecia aequatorialis,LC,Pouco Preocupante,Baixo Risco
+Pithecia milleri,VU,Vulnerável,Alto Risco
+Pongo pygmaeus,CR,Criticamente Ameaçado,Alto Risco
+Presbytis frontata,VU,Vulnerável,Alto Risco
+Presbytis rubicunda,VU,Vulnerável,Alto Risco
+Presbytis thomasi,VU,Vulnerável,Alto Risco
+Presbytis fredericae,VU,Vulnerável,Alto Risco
+Presbytis siamensis,NT,Quase Ameaçado,Médio Risco
+Procolobus verus,VU,Vulnerável,Alto Risco
+Piliocolobus waldroni,CR,Criticamente Ameaçado,Alto Risco
+Piliocolobus bouvieri,EN,Em Perigo,Alto Risco
+Piliocolobus foai,EN,Em Perigo,Alto Risco
+Piliocolobus oustaleti,VU,Vulnerável,Alto Risco
+Piliocolobus tephrosceles,EN,Em Perigo,Alto Risco
+Piliocolobus tholloni,VU,Vulnerável,Alto Risco
+Piliocolobus langi,EN,Em Perigo,Alto Risco
+Piliocolobus lulindicus,EN,Em Perigo,Alto Risco
+Propithecus tattersalli,CR,Criticamente Ameaçado,Alto Risco
+Propithecus verreauxi,CR,Criticamente Ameaçado,Alto Risco
+Propithecus coquereli,CR,Criticamente Ameaçado,Alto Risco
+Propithecus coronatus,CR,Criticamente Ameaçado,Alto Risco
+Propithecus deckenii,CR,Criticamente Ameaçado,Alto Risco
+Propithecus diadema,CR,Criticamente Ameaçado,Alto Risco
+Propithecus edwardsi,EN,Em Perigo,Alto Risco
+Propithecus candidus,CR,Criticamente Ameaçado,Alto Risco
+Propithecus perrieri,CR,Criticamente Ameaçado,Alto Risco
+Rhinopithecus avunculus,CR,Criticamente Ameaçado,Alto Risco
+Rhinopithecus brelichi,CR,Criticamente Ameaçado,Alto Risco
+Rhinopithecus roxellana,EN,Em Perigo,Alto Risco
+Rhinopithecus bieti,EN,Em Perigo,Alto Risco
+Oedipomidas leucopus,VU,Vulnerável,Alto Risco
+Oedipomidas oedipus,CR,Criticamente Ameaçado,Alto Risco
+Leontocebus tripartitus,NT,Quase Ameaçado,Médio Risco
+Leontocebus leucogenys,LC,Pouco Preocupante,Baixo Risco
+Tamarinus imperator,LC,Pouco Preocupante,Baixo Risco
+Leontocebus cruzlimai,LC,Pouco Preocupante,Baixo Risco
+Saimiri oerstedii,EN,Em Perigo,Alto Risco
+Saimiri vanzolinii,EN,Em Perigo,Alto Risco
+Simias concolor,CR,Criticamente Ameaçado,Alto Risco
+Cephalopachus bancanus,VU,Vulnerável,Alto Risco
+Tarsius dentatus,VU,Vulnerável,Alto Risco
+Tarsius pumilus,EN,Em Perigo,Alto Risco
+Carlito syrichta,NT,Quase Ameaçado,Médio Risco
+Tarsius sangirensis,EN,Em Perigo,Alto Risco
+Tarsius pelengensis,EN,Em Perigo,Alto Risco
+Theropithecus gelada,LC,Pouco Preocupante,Baixo Risco
+Trachypithecus cristatus,VU,Vulnerável,Alto Risco
+Trachypithecus geei,EN,Em Perigo,Alto Risco
+Trachypithecus obscurus,EN,Em Perigo,Alto Risco
+Trachypithecus pileatus,VU,Vulnerável,Alto Risco
+Semnopithecus vetulus,EN,Em Perigo,Alto Risco
+Trachypithecus delacouri,CR,Criticamente Ameaçado,Alto Risco
+Trachypithecus laotum,EN,Em Perigo,Alto Risco
+Varecia variegata,CR,Criticamente Ameaçado,Alto Risco
+Varecia rubra,CR,Criticamente Ameaçado,Alto Risco
+Microcebus ravelobensis,VU,Vulnerável,Alto Risco
+Nycticebus bengalensis,EN,Em Perigo,Alto Risco
+Nycticebus javanicus,CR,Criticamente Ameaçado,Alto Risco
+Nomascus concolor,CR,Criticamente Ameaçado,Alto Risco
+Symphalangus syndactylus,EN,Em Perigo,Alto Risco
+Macaca leonina,VU,Vulnerável,Alto Risco
+Macaca ochreata,VU,Vulnerável,Alto Risco
+Macaca pagensis,CR,Criticamente Ameaçado,Alto Risco
+Macaca siberu,EN,Em Perigo,Alto Risco
+Presbytis femoralis,CR,Criticamente Ameaçado,Alto Risco
+Presbytis chrysomelas,CR,Criticamente Ameaçado,Alto Risco
+Presbytis percura,CR,Criticamente Ameaçado,Alto Risco
+Presbytis robinsoni,NT,Quase Ameaçado,Médio Risco
+Presbytis canicrus,EN,Em Perigo,Alto Risco
+Presbytis sabana,EN,Em Perigo,Alto Risco
+Presbytis melalophos,EN,Em Perigo,Alto Risco
+Presbytis bicolor,DD,Dados Insuficientes,Desconhecido
+Presbytis mitrata,VU,Vulnerável,Alto Risco
+Presbytis potenziani,CR,Criticamente Ameaçado,Alto Risco
+Presbytis siberu,EN,Em Perigo,Alto Risco
+Pygathrix nemaeus,CR,Criticamente Ameaçado,Alto Risco
+Pygathrix cinerea,CR,Criticamente Ameaçado,Alto Risco
+Pygathrix nigripes,CR,Criticamente Ameaçado,Alto Risco
+Semnopithecus entellus,LC,Pouco Preocupante,Baixo Risco
+Semnopithecus ajax,EN,Em Perigo,Alto Risco
+Semnopithecus hector,NT,Quase Ameaçado,Médio Risco
+Semnopithecus schistaceus,LC,Pouco Preocupante,Baixo Risco
+Trachypithecus auratus,VU,Vulnerável,Alto Risco
+Trachypithecus mauritius,VU,Vulnerável,Alto Risco
+Trachypithecus francoisi,EN,Em Perigo,Alto Risco
+Trachypithecus shortridgei,EN,Em Perigo,Alto Risco
+Trachypithecus poliocephalus,CR,Criticamente Ameaçado,Alto Risco
+Trachypithecus leucocephalus,CR,Criticamente Ameaçado,Alto Risco
+Trachypithecus germaini,EN,Em Perigo,Alto Risco
+Trachypithecus margarita,EN,Em Perigo,Alto Risco
+Hoolock hoolock,EN,Em Perigo,Alto Risco
+Hylobates albibarbis,EN,Em Perigo,Alto Risco
+Hylobates muelleri,EN,Em Perigo,Alto Risco
+Hylobates abbotti,EN,Em Perigo,Alto Risco
+Hylobates funereus,EN,Em Perigo,Alto Risco
+Nomascus leucogenys,CR,Criticamente Ameaçado,Alto Risco
+Nomascus siki,CR,Criticamente Ameaçado,Alto Risco
+Mico chrysoleucos,LC,Pouco Preocupante,Baixo Risco
+Mico intermedius,LC,Pouco Preocupante,Baixo Risco
+Mico leucippe,LC,Pouco Preocupante,Baixo Risco
+Mico nigriceps,NT,Quase Ameaçado,Médio Risco
+Mico marcai,VU,Vulnerável,Alto Risco
+Aotus brumbacki,VU,Vulnerável,Alto Risco
+Alouatta guariba,VU,Vulnerável,Alto Risco
+Lagothrix flavicauda,CR,Criticamente Ameaçado,Alto Risco
+Plecturocebus ornatus,VU,Vulnerável,Alto Risco
+Callicebus barbarabrownae,CR,Criticamente Ameaçado,Alto Risco
+Callicebus melanochir,VU,Vulnerável,Alto Risco
+Callicebus nigrifrons,NT,Quase Ameaçado,Médio Risco
+Cheracebus medemi,VU,Vulnerável,Alto Risco
+Leontocebus nigricollis,LC,Pouco Preocupante,Baixo Risco
+Cebus albifrons,LC,Pouco Preocupante,Baixo Risco
+Cebus versicolor,EN,Em Perigo,Alto Risco
+Aotus zonalis,NT,Quase Ameaçado,Médio Risco
+Callicebus coimbrai,EN,Em Perigo,Alto Risco
+Pithecia napensis,LC,Pouco Preocupante,Baixo Risco
+Chiropotes satanas,EN,Em Perigo,Alto Risco
+Alouatta belzebul,VU,Vulnerável,Alto Risco
+Alouatta palliata,VU,Vulnerável,Alto Risco
+Ateles hybridus,CR,Criticamente Ameaçado,Alto Risco
+Piliocolobus kirkii,EN,Em Perigo,Alto Risco
+Gorilla beringei,CR,Criticamente Ameaçado,Alto Risco
+Piliocolobus gordonorum,VU,Vulnerável,Alto Risco
+Cebus kaapori,CR,Criticamente Ameaçado,Alto Risco
+Leontopithecus chrysomelas,EN,Em Perigo,Alto Risco
+Saguinus bicolor,CR,Criticamente Ameaçado,Alto Risco
+Papio anubis,LC,Pouco Preocupante,Baixo Risco
+Piliocolobus parmentieri,EN,Em Perigo,Alto Risco
+Galagoides demidoff,LC,Pouco Preocupante,Baixo Risco
+Paragalago orinus,VU,Vulnerável,Alto Risco
+Paragalago rondoensis,EN,Em Perigo,Alto Risco
+Galagoides thomasi,LC,Pouco Preocupante,Baixo Risco
+Trachypithecus hatinhensis,EN,Em Perigo,Alto Risco
+Piliocolobus epieni,CR,Criticamente Ameaçado,Alto Risco
+Piliocolobus pennantii,CR,Criticamente Ameaçado,Alto Risco
+Piliocolobus preussi,CR,Criticamente Ameaçado,Alto Risco
+Callithrix jacchus,LC,Pouco Preocupante,Baixo Risco
+Callithrix penicillata,LC,Pouco Preocupante,Baixo Risco
+Mico argentatus,LC,Pouco Preocupante,Baixo Risco
+Mico humeralifer,NT,Quase Ameaçado,Médio Risco
+Oedipomidas geoffroyi,NT,Quase Ameaçado,Médio Risco
+Tamarinus inustus,LC,Pouco Preocupante,Baixo Risco
+Tamarinus labiatus,LC,Pouco Preocupante,Baixo Risco
+Saguinus midas,LC,Pouco Preocupante,Baixo Risco
+Saguinus mystax,LC,Pouco Preocupante,Baixo Risco
+Saimiri boliviensis,LC,Pouco Preocupante,Baixo Risco
+Saimiri ustus,NT,Quase Ameaçado,Médio Risco
+Aotus azarae,LC,Pouco Preocupante,Baixo Risco
+Aotus nancymaae,VU,Vulnerável,Alto Risco
+Aotus nigriceps,LC,Pouco Preocupante,Baixo Risco
+Aotus trivirgatus,LC,Pouco Preocupante,Baixo Risco
+Aotus vociferans,LC,Pouco Preocupante,Baixo Risco
+Alouatta caraya,NT,Quase Ameaçado,Médio Risco
+Alouatta sara,NT,Quase Ameaçado,Médio Risco
+Ateles chamek,EN,Em Perigo,Alto Risco
+Plecturocebus donacophilus,LC,Pouco Preocupante,Baixo Risco
+Plecturocebus pallescens,LC,Pouco Preocupante,Baixo Risco
+Plecturocebus modestus,EN,Em Perigo,Alto Risco
+Plecturocebus caligatus,LC,Pouco Preocupante,Baixo Risco
+Plecturocebus discolor,LC,Pouco Preocupante,Baixo Risco
+Trachypithecus barbei,VU,Vulnerável,Alto Risco
+Plecturocebus stephennashi,DD,Dados Insuficientes,Desconhecido
+Plecturocebus moloch,LC,Pouco Preocupante,Baixo Risco
+Plecturocebus cinerascens,LC,Pouco Preocupante,Baixo Risco
+Plecturocebus brunneus,VU,Vulnerável,Alto Risco
+Plecturocebus hoffmannsi,LC,Pouco Preocupante,Baixo Risco
+Plecturocebus baptista,LC,Pouco Preocupante,Baixo Risco
+Plecturocebus bernhardi,LC,Pouco Preocupante,Baixo Risco
+Cheracebus lugens,LC,Pouco Preocupante,Baixo Risco
+Cheracebus lucifer,LC,Pouco Preocupante,Baixo Risco
+Cheracebus regulus,LC,Pouco Preocupante,Baixo Risco
+Pithecia albicans,LC,Pouco Preocupante,Baixo Risco
+Miopithecus ogouensis,NT,Quase Ameaçado,Médio Risco
+Microcebus tavaratra,VU,Vulnerável,Alto Risco
+Microcebus sambiranensis,EN,Em Perigo,Alto Risco
+Microcebus berthae,CR,Criticamente Ameaçado,Alto Risco
+Cheirogaleus sibreei,CR,Criticamente Ameaçado,Alto Risco
+Avahi unicolor,CR,Criticamente Ameaçado,Alto Risco
+Mico acariensis,LC,Pouco Preocupante,Baixo Risco
+Mico mauesi,LC,Pouco Preocupante,Baixo Risco
+Callibella humilis,LC,Pouco Preocupante,Baixo Risco
+Nomascus nasutus,CR,Criticamente Ameaçado,Alto Risco
+Nomascus hainanus,CR,Criticamente Ameaçado,Alto Risco
+Mico emiliae,LC,Pouco Preocupante,Baixo Risco
+Mico saterei,LC,Pouco Preocupante,Baixo Risco
+Leontocebus fuscus,LC,Pouco Preocupante,Baixo Risco
+Saguinus martinsi,NT,Quase Ameaçado,Médio Risco
+Sapajus robustus,EN,Em Perigo,Alto Risco
+Chiropotes chiropotes,LC,Pouco Preocupante,Baixo Risco
+Chiropotes utahickae,VU,Vulnerável,Alto Risco
+Alouatta discolor,VU,Vulnerável,Alto Risco
+Cebus castaneus,LC,Pouco Preocupante,Baixo Risco
+Pithecia pithecia,LC,Pouco Preocupante,Baixo Risco
+Pithecia chrysocephala,LC,Pouco Preocupante,Baixo Risco
+Pithecia vanzolinii,DD,Dados Insuficientes,Desconhecido
+Leontocebus lagonotus,LC,Pouco Preocupante,Baixo Risco
+Leontocebus illigeri,NT,Quase Ameaçado,Médio Risco
+Leontocebus nigrifrons,LC,Pouco Preocupante,Baixo Risco
+Tamarinus subgrisescens,LC,Pouco Preocupante,Baixo Risco
+Saimiri sciureus,LC,Pouco Preocupante,Baixo Risco
+Semnopithecus johnii,VU,Vulnerável,Alto Risco
+Loris lydekkerianus,NT,Quase Ameaçado,Médio Risco
+Ateles fusciceps,EN,Em Perigo,Alto Risco
+Microcebus mamiratra,EN,Em Perigo,Alto Risco
+Chlorocebus tantalus,LC,Pouco Preocupante,Baixo Risco
+Aotus jorgehernandezi,DD,Dados Insuficientes,Desconhecido
+Paragalago cocos,LC,Pouco Preocupante,Baixo Risco
+Sciurocheirus gabonensis,LC,Pouco Preocupante,Baixo Risco
+Sapajus flavius,EN,Em Perigo,Alto Risco
+Lepilemur randrianasoloi,EN,Em Perigo,Alto Risco
+Lepilemur fleuretae,EN,Em Perigo,Alto Risco
+Chlorocebus sabaeus,LC,Pouco Preocupante,Baixo Risco
+Eulemur rufifrons,VU,Vulnerável,Alto Risco
+Avahi peyrierasi,VU,Vulnerável,Alto Risco
+Chlorocebus cynosuros,LC,Pouco Preocupante,Baixo Risco
+Mico melanurus,NT,Quase Ameaçado,Médio Risco
+Lepilemur wrightae,EN,Em Perigo,Alto Risco
+Tarsius lariang,DD,Dados Insuficientes,Desconhecido
+Alouatta nigerrima,LC,Pouco Preocupante,Baixo Risco
+Avahi cleesei,CR,Criticamente Ameaçado,Alto Risco
+Sapajus libidinosus,NT,Quase Ameaçado,Médio Risco
+Microcebus danfossi,VU,Vulnerável,Alto Risco
+Sapajus cay,VU,Vulnerável,Alto Risco
+Avahi meridionalis,EN,Em Perigo,Alto Risco
+Lepilemur aeeclis,EN,Em Perigo,Alto Risco
+Hapalemur meridionalis,VU,Vulnerável,Alto Risco
+Cacajao ayresi,LC,Pouco Preocupante,Baixo Risco
+Avahi ramanantsoavanai,VU,Vulnerável,Alto Risco
+Microcebus jollyae,EN,Em Perigo,Alto Risco
+Alouatta arctoidea,LC,Pouco Preocupante,Baixo Risco
+Lepilemur jamesorum,CR,Criticamente Ameaçado,Alto Risco
+Presbytis natunae,VU,Vulnerável,Alto Risco
+Xenothrix mcgregori,EX,Extinto,Extinto
+Palaeopropithecus ingens,EX,Extinto,Extinto
+Microcebus bongolavensis,EN,Em Perigo,Alto Risco
+Macaca munzala,EN,Em Perigo,Alto Risco
+Lepilemur milanoii,EN,Em Perigo,Alto Risco
+Cercocebus agilis,LC,Pouco Preocupante,Baixo Risco
+Microcebus griseorufus,LC,Pouco Preocupante,Baixo Risco
+Cacajao hosomi,VU,Vulnerável,Alto Risco
+Lepilemur sahamalaza,CR,Criticamente Ameaçado,Alto Risco
+Lepilemur betsileo,EN,Em Perigo,Alto Risco
+Lepilemur petteri,EN,Em Perigo,Alto Risco
+Mirza zaza,VU,Vulnerável,Alto Risco
+Lepilemur seali,VU,Vulnerável,Alto Risco
+Lepilemur tymerlachsoni,CR,Criticamente Ameaçado,Alto Risco
+Sapajus nigritus,NT,Quase Ameaçado,Médio Risco
+Lepilemur ankaranensis,EN,Em Perigo,Alto Risco
+Lepilemur hubbardorum,EN,Em Perigo,Alto Risco
+Avahi betsileo,EN,Em Perigo,Alto Risco
+Lepilemur grewcockorum,CR,Criticamente Ameaçado,Alto Risco
+Alouatta puruensis,VU,Vulnerável,Alto Risco
+Rungwecebus kipunji,EN,Em Perigo,Alto Risco
+Lepilemur otto,EN,Em Perigo,Alto Risco
+Mico rondoni,VU,Vulnerável,Alto Risco
+Plecturocebus aureipalatii,LC,Pouco Preocupante,Baixo Risco
+Lepilemur ahmansoni,CR,Criticamente Ameaçado,Alto Risco
+Papio kindae,LC,Pouco Preocupante,Baixo Risco
+Perodicticus edwardsi,LC,Pouco Preocupante,Baixo Risco
+Colobus caudatus,VU,Vulnerável,Alto Risco
+Cebuella niveiventris,VU,Vulnerável,Alto Risco
+Perodicticus ibeanus,LC,Pouco Preocupante,Baixo Risco
+Cercopithecus denti,LC,Pouco Preocupante,Baixo Risco
+Presbytis sumatrana,EN,Em Perigo,Alto Risco
+Trachypithecus crepusculus,EN,Em Perigo,Alto Risco
+Cebuella pygmaea,VU,Vulnerável,Alto Risco
+Cercopithecus campbelli,NT,Quase Ameaçado,Médio Risco
+Cercopithecus lowei,VU,Vulnerável,Alto Risco
+Cercocebus atys,VU,Vulnerável,Alto Risco
+Piliocolobus rufomitratus,CR,Criticamente Ameaçado,Alto Risco
+Tarsius tumpara,CR,Criticamente Ameaçado,Alto Risco
+Tarsius wallacei,VU,Vulnerável,Alto Risco
+Rhinopithecus strykeri,CR,Criticamente Ameaçado,Alto Risco
+Plecturocebus caquetensis,CR,Criticamente Ameaçado,Alto Risco
+Microcebus margotmarshae,EN,Em Perigo,Alto Risco
+Microcebus arnholdi,VU,Vulnerável,Alto Risco
+Microcebus macarthurii,EN,Em Perigo,Alto Risco
+Microcebus gerpi,CR,Criticamente Ameaçado,Alto Risco
+Lepilemur hollandorum,CR,Criticamente Ameaçado,Alto Risco
+Lepilemur scottorum,EN,Em Perigo,Alto Risco
+Avahi mooreorum,EN,Em Perigo,Alto Risco
+Microcebus marohita,CR,Criticamente Ameaçado,Alto Risco
+Cheirogaleus major,VU,Vulnerável,Alto Risco
+Microcebus rufus,VU,Vulnerável,Alto Risco
+Chiropotes sagulatus,LC,Pouco Preocupante,Baixo Risco
+Plecturocebus vieirai,CR,Criticamente Ameaçado,Alto Risco
+Cebus leucocephalus,VU,Vulnerável,Alto Risco
+Cebus unicolor,VU,Vulnerável,Alto Risco
+Pithecia hirsuta,LC,Pouco Preocupante,Baixo Risco
+Pithecia monachus,LC,Pouco Preocupante,Baixo Risco
+Pithecia inusta,LC,Pouco Preocupante,Baixo Risco
+Pithecia cazuzai,DD,Dados Insuficientes,Desconhecido
+Pithecia isabela,DD,Dados Insuficientes,Desconhecido
+Pithecia mittermeieri,VU,Vulnerável,Alto Risco
+Pithecia rylandsi,VU,Vulnerável,Alto Risco
+Pithecia pissinattii,DD,Dados Insuficientes,Desconhecido
+Pithecia irrorata,DD,Dados Insuficientes,Desconhecido
+Saguinus ursulus,VU,Vulnerável,Alto Risco
+Saimiri collinsi,LC,Pouco Preocupante,Baixo Risco
+Cebus brunneus,EN,Em Perigo,Alto Risco
+Cebus capucinus,VU,Vulnerável,Alto Risco
+Cebus imitator,VU,Vulnerável,Alto Risco
+Cebus olivaceus,LC,Pouco Preocupante,Baixo Risco
+Paragalago granti,LC,Pouco Preocupante,Baixo Risco
+Sciurocheirus makandensis,DD,Dados Insuficientes,Desconhecido
+Perodicticus potto,NT,Quase Ameaçado,Médio Risco
+Papio cynocephalus,LC,Pouco Preocupante,Baixo Risco
+Erythrocebus baumstarki,CR,Criticamente Ameaçado,Alto Risco
+Cercopithecus lomamiensis,VU,Vulnerável,Alto Risco
+Cercopithecus pogonias,NT,Quase Ameaçado,Médio Risco
+Cercopithecus wolfi,NT,Quase Ameaçado,Médio Risco
+Piliocolobus semlikiensis,VU,Vulnerável,Alto Risco
+Hoolock leuconedys,VU,Vulnerável,Alto Risco
+Hoolock tianxing,EN,Em Perigo,Alto Risco
+Pongo tapanuliensis,CR,Criticamente Ameaçado,Alto Risco
+Nomascus annamensis,EN,Em Perigo,Alto Risco
+Pongo abelii,CR,Criticamente Ameaçado,Alto Risco
+Plecturocebus miltoni,DD,Dados Insuficientes,Desconhecido
+Plecturocebus urubambensis,LC,Pouco Preocupante,Baixo Risco
+Plecturocebus cupreus,LC,Pouco Preocupante,Baixo Risco
+Plecturocebus toppini,LC,Pouco Preocupante,Baixo Risco
+Nomascus gabriellae,EN,Em Perigo,Alto Risco
+Cacajao melanocephalus,LC,Pouco Preocupante,Baixo Risco
+Lagothrix lagothricha,VU,Vulnerável,Alto Risco
+Leontocebus fuscicollis,LC,Pouco Preocupante,Baixo Risco
+Saguinus niger,VU,Vulnerável,Alto Risco
+Leontocebus weddelli,LC,Pouco Preocupante,Baixo Risco
+Saimiri cassiquiarensis,LC,Pouco Preocupante,Baixo Risco
+Piliocolobus badius,EN,Em Perigo,Alto Risco
+Tarsius spectrumgurskyae,VU,Vulnerável,Alto Risco
+Tarsius supriatnai,VU,Vulnerável,Alto Risco
+Tarsius niemitzi,EN,Em Perigo,Alto Risco
+Tarsius tarsier,VU,Vulnerável,Alto Risco
+Tarsius fuscus,VU,Vulnerável,Alto Risco
+Nycticebus menagensis,VU,Vulnerável,Alto Risco
+Nycticebus kayan,VU,Vulnerável,Alto Risco
+Nycticebus bancanus,CR,Criticamente Ameaçado,Alto Risco
+Nycticebus borneanus,VU,Vulnerável,Alto Risco
+Nycticebus coucang,EN,Em Perigo,Alto Risco
+Nycticebus hilleri,EN,Em Perigo,Alto Risco
+Cheirogaleus shethi,EN,Em Perigo,Alto Risco
+Cheirogaleus crossleyi,VU,Vulnerável,Alto Risco
+Cheirogaleus andysabini,EN,Em Perigo,Alto Risco
+Cheirogaleus grovesi,DD,Dados Insuficientes,Desconhecido
+Cheirogaleus lavasoensis,EN,Em Perigo,Alto Risco
+Cheirogaleus thomasi,EN,Em Perigo,Alto Risco
+Cheirogaleus medius,VU,Vulnerável,Alto Risco
+Microcebus tanosi,EN,Em Perigo,Alto Risco
+Microcebus ganzhorni,EN,Em Perigo,Alto Risco
+Microcebus manitatra,CR,Criticamente Ameaçado,Alto Risco
+Microcebus boraha,DD,Dados Insuficientes,Desconhecido
+Microcebus murinus,LC,Pouco Preocupante,Baixo Risco
+Microcebus simmonsi,EN,Em Perigo,Alto Risco
+Galagoides kumbirensis,NT,Quase Ameaçado,Médio Risco
+Semnopithecus hypoleucos,LC,Pouco Preocupante,Baixo Risco
+Semnopithecus priam,NT,Quase Ameaçado,Médio Risco
+Mico munduruku,VU,Vulnerável,Alto Risco
+Plecturocebus grovesi,CR,Criticamente Ameaçado,Alto Risco
+Plecturocebus parecis,NT,Quase Ameaçado,Médio Risco
+Sapajus apella,LC,Pouco Preocupante,Baixo Risco
+Erythrocebus patas,NT,Quase Ameaçado,Médio Risco
+Presbytis hosei,VU,Vulnerável,Alto Risco
+Trachypithecus phayrei,EN,Em Perigo,Alto Risco
+Trachypithecus popa,CR,Criticamente Ameaçado,Alto Risco
+Microcebus jonahi,EN,Em Perigo,Alto Risco
+Alouatta macconnelli,LC,Pouco Preocupante,Baixo Risco
+Alouatta seniculus,LC,Pouco Preocupante,Baixo Risco
+Macaca leucogenys,EN,Em Perigo,Alto Risco
+Trachypithecus selangorensis,NT,Quase Ameaçado,Médio Risco
+Mico schneideri,EN,Em Perigo,Alto Risco
+Microcebus lehilahytsara,NT,Quase Ameaçado,Médio Risco
+Lepilemur dorsalis,EN,Em Perigo,Alto Risco
+Presbytis comata,VU,Vulnerável,Alto Risco
+Cheracebus torquatus,LC,Pouco Preocupante,Baixo Risco
+Chlorocebus pygerythrus,LC,Pouco Preocupante,Baixo Risco
+Chlorocebus aethiops,LC,Pouco Preocupante,Baixo Risco
+Cacajao amuna,LC,Pouco Preocupante,Baixo Risco
+Xanthonycticebus pygmaeus,EN,Em Perigo,Alto Risco
+Xanthonycticebus intermedius,EN,Em Perigo,Alto Risco
