@@ -62,57 +62,6 @@ unzip MAMMALS_TERRESTRIAL_ONLY.zip
 # Mover para a pasta correta
 mv MAMMALS_TERRESTRIAL_ONLY/ data/raw/
 
-# Verificar se está correto
-ls -la data/raw/MAMMALS_TERRESTRIAL_ONLY/
-# Deve conter: .shp, .shx, .dbf, .prj, .cpg, etc.
-```
-
-### **Passo 3: Executar o Pipeline Completo**
-
-```bash
-# 1. Instale as dependências
-pip install -r requirements.txt
-
-# 2. Abra o Jupyter
-jupyter notebook
-
-# 3. Execute os notebooks em ordem:
-# - 01_data_cleaning.ipynb (processa os shapefiles e gera dados em data/processed/)
-# - 02_eda.ipynb (análise exploratória)
-# - 03_visualization.ipynb (visualizações interativas)
-# - 04_machine_learning.ipynb (modelo preditivo)
-```
-
-**Resultado:** Após executar `01_data_cleaning.ipynb`, as pastas `data/processed/` será preenchida com:
-- `primates_species_clean.csv` — Dados tabulares limpos
-- `primates_map.geojson` — Geometrias simplificadas
-
----
-
-## 🚀 Como Executar o Projeto
-
-### **Instalação Rápida**
-
-```bash
-# 1. Clone o repositório
-git clone https://github.com/ferropng/Global-Primates-Watch.git
-cd Global-Primates-Watch
-
-# 2. Crie um ambiente virtual (recomendado)
-python -m venv venv
-source venv/bin/activate  # No Windows: venv\Scripts\activate
-
-# 3. Instale as dependências
-pip install -r requirements.txt
-
-# 4. Siga o "Setup Inicial: Baixar Dados" acima
-
-# 5. Abra o Jupyter
-jupyter notebook
-
-# 6. Execute os notebooks em ordem numérica
-```
-
 ---
 ## 📊 Análises e Visualizações
 
