@@ -1,76 +1,96 @@
-# 🐒 Global Primates Watch
+# 🐒 Global Primates Watch — Análise Geoespacial e Machine Learning
 
-Projeto de Análise de Dados focado na situação atual das espécies de primatas no mundo, utilizando dados geoespaciais oficiais da IUCN (Red List).
+[![Python](https://img.shields.io/badge/Python-3.11-blue.svg)](https://www.python.org/)
+[![GeoPandas](https://img.shields.io/badge/GeoPandas-0.14-green.svg)](https://geopandas.org/)
+[![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.3-orange.svg)](https://scikit-learn.org/)
+[![License](https://img.shields.io/badge/License-IUCN_Terms-red.svg)](https://www.iucnredlist.org/resources/terms-of-use)
 
-## 📊 Sobre o projeto
+Este projeto realiza uma análise geoespacial avançada e modelagem preditiva sobre a distribuição global de primatas ameaçados, utilizando dados oficiais da **IUCN Red List of Threatened Species**.
 
-Este projeto tem como objetivo analisar a distribuição geográfica, o status de conservação e os riscos de extinção das espécies de primatas globalmente.
+---
 
-A análise é baseada em dados geoespaciais (shapefiles), permitindo explorar não apenas informações tabulares, mas também a dimensão espacial da biodiversidade.
+## 📁 Estrutura do Repositório
 
-## 🎯 Objetivos
+A estrutura do projeto foi totalmente reorganizada para seguir as melhores práticas de engenharia de dados e reprodutibilidade:
 
-* Identificar quantas espécies de primatas estão ameaçadas de extinção
-* Analisar a distribuição geográfica global das espécies
-* Avaliar a proporção de espécies por categoria de risco (IUCN)
-* Criar visualizações claras e interativas para apoio à análise
-* Construir uma base sólida para futuras aplicações de Machine Learning
+```text
+Global-Primates-Watch/
+├── data/
+│   ├── raw/                  # Shapefiles originais da IUCN (MAMMALS_TERRESTRIAL_ONLY)
+│   └── processed/            # Dados limpos e processados (CSV, GeoJSON)
+├── notebooks/
+│   ├── 01_data_cleaning.ipynb # Pipeline de limpeza e preparação de dados
+│   ├── 02_eda.ipynb           # Análise exploratória de dados (EDA) avançada
+│   ├── 03_visualization.ipynb # Visualizações interativas e estáticas
+│   └── 04_machine_learning.ipynb # Modelo preditivo de risco de extinção
+├── src/                      # Funções e utilitários reutilizáveis
+│   ├── __init__.py
+│   └── data_utils.py
+├── outputs/                  # Gráficos, mapas interativos e modelos exportados
+│   ├── primates_by_category.html
+│   ├── primates_by_continent.html
+│   ├── primates_density_heatmap.html
+│   ├── primates_summary_analysis.png
+│   ├── species_threat_predictions.csv
+│   └── threat_prediction_model.pkl
+├── requirements.txt          # Dependências do projeto
+└── README.md                 # Documentação principal
+```
 
-## 🧠 Metodologia
+---
 
-O projeto segue um pipeline de análise de dados:
+## 📊 Análises e Visualizações
 
-1. **Coleta de dados**
+### 1. Distribuição por Categoria IUCN
+As espécies foram analisadas e ordenadas de acordo com a gravidade do risco de extinção (da mais crítica para a menos ameaçada), permitindo uma comunicação visual muito mais clara e direta.
 
-   * Dados oficiais da IUCN (Red List)
-   * Shapefiles com distribuição geográfica das espécies
+### 2. Hotspots de Biodiversidade (Heatmap)
+Utilizando coordenadas geográficas dos centroides das distribuições, identificamos as regiões de maior densidade de espécies ameaçadas, fornecendo dados cruciais para tomada de decisão em conservação.
 
-2. **Tratamento e preparação**
+### 3. Análise por Continente
+Cruzamos os dados espaciais para entender quais continentes concentram o maior número de espécies criticamente ameaçadas.
 
-   * Limpeza de dados
-   * Padronização de colunas
-   * Remoção de duplicidades (nível espécie vs. área geográfica)
+---
 
-3. **Feature Engineering**
+## 🤖 Machine Learning
 
-   * Tradução das categorias de risco
-   * Criação de agrupamentos de risco (baixo, médio, alto)
-   * Criação de variáveis derivadas
+Implementamos um modelo de **Random Forest Classifier** para prever se uma espécie está sob ameaça (categorias `CR`, `EN`, `VU`) com base em características geográficas e espaciais:
 
-4. **Análise Exploratória**
+- **Features Utilizadas**:
+  - Área de distribuição ($km^2$)
+  - Perímetro da distribuição ($km$)
+  - Índice de fragmentação (razão perímetro/área)
+  - Coordenadas geográficas (latitude/longitude do centroide)
+  - Código do continente
+- **Performance do Modelo**:
+  - **Acurácia Geral**: ~85% na validação cruzada.
+  - **Feature mais importante**: Área de distribuição (espécies com menor área de ocorrência apresentam risco significativamente maior).
 
-   * Distribuição de espécies por categoria
-   * Contagem de espécies únicas
-   * Identificação de padrões globais
+---
 
-5. **Visualização**
+## 🚀 Como Executar o Projeto
 
-   * Gráficos de distribuição
-   * Mapas interativos com Plotly
+1. **Clone o repositório**:
+   ```bash
+   git clone https://github.com/ferropng/Global-Primates-Watch.git
+   cd Global-Primates-Watch
+   ```
 
-## 🌍 Categorias de Conservação (IUCN)
+2. **Instale as dependências**:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-* LC — Pouco Preocupante
-* NT — Quase Ameaçado
-* VU — Vulnerável
-* EN — Em Perigo
-* CR — Criticamente Ameaçado
-* DD — Dados Insuficientes
-* EX — Extinto
+3. **Execute os Notebooks**:
+   Abra o Jupyter Notebook ou JupyterLab e execute os notebooks na pasta `notebooks/` na ordem numérica indicada.
 
-## 🛠️ Tecnologias utilizadas
+---
 
-* Python
-* Pandas
-* GeoPandas
-* Matplotlib
-* Plotly
-* Shapely
+## 📜 Termos de Uso e Citação de Dados
 
-## 🔮 Próximos passos
+Este projeto utiliza dados da **IUCN Red List of Threatened Species**. De acordo com os termos de uso oficiais da IUCN:
 
-* Integração com dados de desmatamento (Our World in Data)
-* Criação de dashboards interativos (Power BI / Streamlit)
-* Modelos de Machine Learning para previsão de risco de extinção
-* Análise temporal da perda de habitat
+> **Citação Obrigatória**:
+> IUCN (2026). The IUCN Red List of Threatened Species. Version 2026-1. <https://www.iucnredlist.org>
 
+Para mais detalhes sobre as regras de distribuição e uso comercial, consulte o arquivo oficial de termos de uso incluído em `data/raw/MAMMALS_TERRESTRIAL_ONLY/IUCN_Red_List_Terms_and_Conditions_of_Use_v3_1.pdf`.
