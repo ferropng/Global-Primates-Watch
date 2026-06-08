@@ -129,45 +129,27 @@ def main():
     render_metrics(stats)
     
     # Tabs principais
-    tab1, tab2, tab3, tab4 = st.tabs(["🗺️ Mapas", "📊 Análises", "🔍 Detalhes", "ℹ️ Sobre"])
+    tab1, tab2, tab3, tab4 = st.tabs(["🗺️ Mapa", "📊 Análises", "🔍 Detalhes", "ℹ️ Sobre"])
     
     # ========================================================================
     # TAB 1: MAPAS
     # ========================================================================
     with tab1:
-        st.subheader("🗺️ Visualizações Geoespaciais")
-        st.markdown("Explore a distribuição global de primatas com mapas interativos.")
-        
-        map_type = st.radio(
-            "Selecione o tipo de visualização:",
-            [
-                "🎨 Mapa Coroplético",
-                "🔥 Heatmap de Densidade",
-            ],
-            horizontal=True,
+        st.subheader("🗺️ Visualização Geoespacial")
+        st.markdown("Explore a distribuição global de primatas.")
+
+        st.markdown("#### Distribuição por Categoria IUCN")
+        st.info(
+        "💡 Clique nos pontos para ver detalhes da espécie. Os clusters se expandem ao dar zoom."
         )
-        
-        if map_type == "🎨 Mapa Coroplético":
-            st.markdown("#### Distribuição por Categoria IUCN")
-            st.info(
-                "💡 Clique nos pontos para ver detalhes da espécie. Os clusters se expandem ao dar zoom."
-            )
-            m = create_choropleth_map(filtered_gdf, filtered_df)
-            st_folium(m, width=None, height=700, returned_objects=[])
-        
-        else:  # Heatmap
-            st.markdown("#### Hotspots de Espécies Ameaçadas")
-            st.info(
-                "💡 Cores mais quentes indicam maior concentração de espécies ameaçadas."
-            )
-            threatened_count = len(
-                filtered_df[filtered_df["risco"].isin(["Alto Risco", "Crítico"])]
-            )
-            if threatened_count > 0:
-                m = create_heatmap_density(filtered_gdf, filtered_df)
-                st_folium(m, width=None, height=700, returned_objects=[])
-            else:
-                st.warning("⚠️ Nenhuma espécie ameaçada encontrada com os filtros atuais.")
+
+    m = create_choropleth_map(filtered_gdf, filtered_df)
+    st_folium(
+        m,
+        width=None,
+        height=700,
+        returned_objects=[]
+    )
     
     # ========================================================================
     # TAB 2: ANÁLISES
