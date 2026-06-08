@@ -47,6 +47,8 @@ from src.data_processor import (
 from app.config import GEOJSON_PATH, CSV_PATH
 from streamlit_folium import st_folium
 
+DATA_PROCESSING_VERSION = "continent-classification-v2"
+
 
 # ============================================================================
 # CONFIGURAÇÃO DA PÁGINA
@@ -61,7 +63,7 @@ st.markdown(CUSTOM_CSS, unsafe_allow_html=True)
 # FUNÇÕES AUXILIARES
 # ============================================================================
 @st.cache_data
-def load_and_process_data():
+def load_and_process_data(cache_version: str = DATA_PROCESSING_VERSION):
     """Carrega e processa dados com cache."""
     try:
         gdf, df = load_data(GEOJSON_PATH, CSV_PATH)
@@ -254,6 +256,7 @@ def main():
                     st.markdown("#### 📍 Distribuição Geográfica")
                     m_species = create_species_detail_map(
                         filtered_gdf,
+                        filtered_df,
                         selected_species,
                         species_details["category"],
                     )

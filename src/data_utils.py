@@ -176,16 +176,18 @@ def get_statistics_by_continent(gdf: gpd.GeoDataFrame) -> Dict[str, int]:
         if row.geometry is None:
             continue
             
-        lon = row.geometry.centroid.x
+        centroid = row.geometry.centroid
+        lat = centroid.y
+        lon = centroid.x
         
-        if -180 <= lon < -60:
+        if -180 <= lon < -30:
             continent = 'América'
-        elif -60 <= lon < 40:
+        elif -30 <= lon < 55:
             continent = 'África'
-        elif 40 <= lon < 100:
+        elif 55 <= lon < 130:
             continent = 'Ásia'
-        elif 100 <= lon <= 180:
-            continent = 'Oceania'
+        elif 130 <= lon <= 180:
+            continent = 'Oceania' if lat <= 0 else 'Ásia'
         else:
             continent = 'Desconhecido'
         

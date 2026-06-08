@@ -14,6 +14,23 @@ import os
 logger = logging.getLogger(__name__)
 
 
+def classify_continent(lat: float, lon: float) -> str:
+    """Classifica continente a partir do ponto central da distribuição."""
+    if pd.isna(lat) or pd.isna(lon):
+        return "Desconhecido"
+
+    if -180 <= lon < -30:
+        return "América"
+    if -30 <= lon < 55:
+        return "África"
+    if 55 <= lon < 130:
+        return "Ásia"
+    if 130 <= lon <= 180:
+        return "Oceania" if lat <= 0 else "Ásia"
+
+    return "Desconhecido"
+
+
 @st.cache_data
 def load_data(
     geojson_path: Path,
@@ -95,20 +112,10 @@ def add_geographic_info(
     gdf["lat"] = gdf.geometry.centroid.y
     gdf["lon"] = gdf.geometry.centroid.x
     
-    # Classificar continentes baseado em longitude
-    def classify_continent(lon: float) -> str:
-        """Classifica continente pela longitude do centroide."""
-        if -180 <= lon < -60:
-            return "América"
-        elif -60 <= lon < 40:
-            return "África"
-        elif 40 <= lon < 100:
-            return "Ásia"
-        elif 100 <= lon <= 180:
-            return "Oceania"
-        return "Desconhecido"
-    
-    gdf["continente"] = gdf["lon"].apply(classify_continent)
+    gdf["continente"] = gdf.apply(
+        lambda row: classify_continent(row["lat"], row["lon"]),
+        axis=1,
+    )
     
     # Sincronizar continente no DataFrame
     if "sci_name" in gdf.columns and "sci_name" in df.columns:

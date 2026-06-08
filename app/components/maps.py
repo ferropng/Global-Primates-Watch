@@ -1,6 +1,6 @@
 """
-Módulo para criação de mapas interativos com Folium.
-Código simplificado, funcional e bonito com clustering.
+MÃ³dulo para criaÃ§Ã£o de mapas interativos com Folium.
+CÃ³digo simplificado, funcional e bonito com clustering.
 """
 
 import folium
@@ -18,6 +18,55 @@ from app.config import (
 )
 
 logger = logging.getLogger(__name__)
+NOT_INFORMED = "Não informado"
+
+
+def _display_value(value: object, fallback: str = NOT_INFORMED) -> str:
+    if pd.isna(value) or str(value).strip() == "":
+        return fallback
+
+    return str(value)
+
+
+def _add_species_attributes(
+    gdf: gpd.GeoDataFrame,
+    df: pd.DataFrame,
+    columns: List[str],
+) -> gpd.GeoDataFrame:
+    """Add CSV attributes to a GeoDataFrame without duplicate merge suffixes."""
+    if "sci_name" not in gdf.columns or "sci_name" not in df.columns:
+        return gdf.copy()
+
+    gdf = gdf.copy()
+    available_columns = [column for column in columns if column in df.columns]
+
+    if not available_columns:
+        return gdf
+
+    attributes = (
+        df[["sci_name", *available_columns]]
+        .drop_duplicates(subset=["sci_name"])
+        .set_index("sci_name")
+    )
+
+    for column in available_columns:
+        mapped_values = gdf["sci_name"].map(attributes[column])
+
+        if column in gdf.columns:
+            gdf[column] = gdf[column].where(gdf[column].notna(), mapped_values)
+        else:
+            gdf[column] = mapped_values
+
+    duplicate_suffix_columns = [
+        column
+        for column in gdf.columns
+        if column.endswith("_df") and column[:-3] in available_columns
+    ]
+
+    if duplicate_suffix_columns:
+        gdf = gdf.drop(columns=duplicate_suffix_columns)
+
+    return gdf
 
 
 def create_base_map(
@@ -33,44 +82,56 @@ def create_base_map(
     m = folium.Map(
         location=center,
         zoom_start=zoom_start,
-        tiles=tiles,
+        tiles=None,
         control_scale=MAP_CONFIG["control_scale"],
         prefer_canvas=MAP_CONFIG["prefer_canvas"],
     )
+
+    folium.TileLayer(
+        tiles=tiles,
+        name="Mapa base",
+        control=True,
+    ).add_to(m)
+
+    _localize_leaflet_controls(m)
     
     return m
 
 
 def create_interactive_map(gdf: gpd.GeoDataFrame, df: pd.DataFrame) -> folium.Map:
-    """Cria mapa interativo com clustering e popups clicáveis."""
+    """Cria mapa interativo com clustering e popups clicÃ¡veis."""
 
     if "lat" not in gdf.columns or "lon" not in gdf.columns:
         gdf = gdf.copy()
         gdf["lat"] = gdf.geometry.centroid.y
         gdf["lon"] = gdf.geometry.centroid.x
 
-    # Fazer merge com o DataFrame para incluir common_name e outras colunas
-    gdf = gdf.merge(
-        df[["sci_name", "category", "category_pt", "risco", "common_name", "continente"]],
-        on="sci_name",
-        how="left",
-        suffixes=("", "_df")
+    gdf = _add_species_attributes(
+        gdf,
+        df,
+        ["category", "category_pt", "risco", "common_name", "continente"],
     )
 
     gdf_unique = gdf.drop_duplicates(subset=["sci_name"], keep="first")
 
-    logger.info(f"Renderizando {len(gdf_unique)} espécies")
+    logger.info(f"Renderizando {len(gdf_unique)} espÃ©cies")
 
     m = folium.Map(
         location=MAP_CONFIG["center"],
         zoom_start=MAP_CONFIG["zoom_start"],
-        tiles=MAP_CONFIG["tiles"],
+        tiles=None,
         control_scale=True,
         prefer_canvas=False,
     )
 
+    folium.TileLayer(
+        tiles=MAP_CONFIG["tiles"],
+        name="Mapa base",
+        control=True,
+    ).add_to(m)
+
     marker_cluster = MarkerCluster(
-        name="🐒 Espécies de Primatas",
+        name="Espécies de primatas",
         show=True,
     ).add_to(m)
 
@@ -79,22 +140,17 @@ def create_interactive_map(gdf: gpd.GeoDataFrame, df: pd.DataFrame) -> folium.Ma
         if pd.isna(row["lat"]) or pd.isna(row["lon"]):
             continue
 
-        sci_name = str(row.get("sci_name", "N/A"))
+        sci_name = _display_value(row.get("sci_name"))
 
         # Nome comum vindo diretamente da coluna common_name
-        common_name = row.get("common_name", None)
-
-        if pd.isna(common_name) or str(common_name).strip() == "":
-            common_name = "N/A"
-        else:
-            common_name = str(common_name)
+        common_name = _display_value(row.get("common_name", None))
 
         category = row.get("category", "NE")
         color = IUCN_COLORS.get(category, "#cccccc")
-        category_label = IUCN_LABELS.get(category, "N/A")
+        category_label = IUCN_LABELS.get(category, NOT_INFORMED)
 
-        risco = row.get("risco", "N/A")
-        continente = row.get("continente", "N/A")
+        risco = _display_value(row.get("risco"))
+        continente = _display_value(row.get("continente"))
 
         html = f"""
         <div style="width:280px;font-family:Arial,sans-serif;">
@@ -107,9 +163,9 @@ def create_interactive_map(gdf: gpd.GeoDataFrame, df: pd.DataFrame) -> folium.Ma
                 {sci_name}
             </h4>
 
-            <p><b>Nome Comum:</b> {common_name}</p>
+            <p><b>Nome comum:</b> {common_name}</p>
             <p><b>Categoria IUCN:</b> {category_label}</p>
-            <p><b>Risco:</b> {risco}</p>
+            <p><b>Nível de risco:</b> {risco}</p>
             <p><b>Continente:</b> {continente}</p>
         </div>
         """
@@ -147,7 +203,7 @@ def create_interactive_map(gdf: gpd.GeoDataFrame, df: pd.DataFrame) -> folium.Ma
 
             HeatMap(
                 heat_data,
-                name="🔥 Hotspot de Ameaça",
+                name="Áreas de maior ameaça",
                 overlay=True,
                 control=True,
                 **HEATMAP_CONFIG,
@@ -158,19 +214,13 @@ def create_interactive_map(gdf: gpd.GeoDataFrame, df: pd.DataFrame) -> folium.Ma
     ).add_to(m)
 
     _add_legend(m)
+    _localize_leaflet_controls(m)
 
     return m
 
 
 def create_choropleth_map(gdf: gpd.GeoDataFrame, df: pd.DataFrame) -> folium.Map:
-    """Cria mapa coroplético com clustering bonito."""
-    # Fazer merge com o DataFrame para incluir common_name
-    gdf = gdf.merge(
-        df[["sci_name", "category", "category_pt", "risco", "common_name", "continente"]],
-        on="sci_name",
-        how="left",
-        suffixes=("", "_df")
-    )
+    """Cria mapa coroplÃ©tico com clustering bonito."""
     return create_interactive_map(gdf, df)
 
 
@@ -182,17 +232,15 @@ def create_heatmap_density(gdf: gpd.GeoDataFrame, df: pd.DataFrame) -> folium.Ma
         gdf["lat"] = gdf.geometry.centroid.y
         gdf["lon"] = gdf.geometry.centroid.x
     
-    # Fazer merge com o DataFrame para incluir risco
-    gdf = gdf.merge(
-        df[["sci_name", "risco"]],
-        on="sci_name",
-        how="left",
-        suffixes=("", "_df")
+    gdf = _add_species_attributes(
+        gdf,
+        df,
+        ["risco"],
     )
     
     m = create_base_map()
     
-    # Espécies ameaçadas
+    # EspÃ©cies ameaÃ§adas
     threatened = gdf[gdf["risco"].isin(["Alto Risco", "Crítico"])]
     
     if len(threatened) > 0:
@@ -203,21 +251,26 @@ def create_heatmap_density(gdf: gpd.GeoDataFrame, df: pd.DataFrame) -> folium.Ma
         ]
         
         if heat_data:
-            HeatMap(heat_data, name="🔥 Densidade", overlay=True, control=True, **HEATMAP_CONFIG).add_to(m)
+            HeatMap(
+                heat_data,
+                name="Densidade de espécies ameaçadas",
+                overlay=True,
+                control=True,
+                **HEATMAP_CONFIG,
+            ).add_to(m)
     
     folium.LayerControl().add_to(m)
+    _localize_leaflet_controls(m)
     return m
 
 
 def create_species_detail_map(gdf: gpd.GeoDataFrame, df: pd.DataFrame, species_name: str, category: str) -> folium.Map:
-    """Cria mapa de detalhe para uma espécie."""
+    """Cria mapa de detalhe para uma espÃ©cie."""
     
-    # Fazer merge com o DataFrame
-    gdf = gdf.merge(
-        df[["sci_name", "category"]],
-        on="sci_name",
-        how="left",
-        suffixes=("", "_df")
+    gdf = _add_species_attributes(
+        gdf,
+        df,
+        ["category"],
     )
     
     species_gdf = gdf[gdf["sci_name"] == species_name]
@@ -242,9 +295,12 @@ def create_species_detail_map(gdf: gpd.GeoDataFrame, df: pd.DataFrame, species_n
                 "weight": 2,
                 "fillOpacity": 0.7,
             },
-            popup=f"<b>{species_name}</b>",
+            popup=f"<b>Espécie:</b> {species_name}",
+            name=f"Distribuição de {species_name}",
         ).add_to(m)
     
+    folium.LayerControl().add_to(m)
+    _localize_leaflet_controls(m)
     return m
 
 
@@ -303,3 +359,28 @@ def _add_legend(m: folium.Map) -> None:
     m.get_root().html.add_child(
         folium.Element(legend_html)
     )
+
+
+def _localize_leaflet_controls(m: folium.Map) -> None:
+    """Traduz rótulos dos controles padrão do Leaflet."""
+    script = """
+    <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const zoomIn = document.querySelector(".leaflet-control-zoom-in");
+        const zoomOut = document.querySelector(".leaflet-control-zoom-out");
+
+        if (zoomIn) {
+            zoomIn.title = "Aproximar";
+            zoomIn.setAttribute("aria-label", "Aproximar");
+        }
+
+        if (zoomOut) {
+            zoomOut.title = "Afastar";
+            zoomOut.setAttribute("aria-label", "Afastar");
+        }
+    });
+    </script>
+    """
+
+    m.get_root().html.add_child(folium.Element(script))
+
